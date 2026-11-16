@@ -11,6 +11,16 @@ public class Main {
         System.out.println(s1.toString());
         System.out.println(s2.toString());
 
+        double nota;
+        nota = Input.db("Informe a nota da serie O Mentalista: ");
+        if (s1.setNota(nota)) {
+            System.out.println("Nota registrada");
+        }
+        else {
+            System.out.println("Nota invalida!");
+        }
+
+
     }
  }
 

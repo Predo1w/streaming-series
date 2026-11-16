@@ -22,4 +22,21 @@ public class Series {
         this.plataforma = "plataforma indefinida";
 
     }
+
+    public double getNota() {
+        return nota;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public boolean setNota(double nota) {
+        if (nota <= 10 && nota >= 0) {
+            this.nota = nota;
+            return true;
+        }
+        return false;
+    }
+
 }
